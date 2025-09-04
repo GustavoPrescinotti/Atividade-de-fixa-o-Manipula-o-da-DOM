@@ -6,11 +6,16 @@
     <title>Atividade 53</title>
 </head>
 <body>
+ <!-- 13. Caixa de alerta personalizada -->
+  <!-- Campo de texto onde o usuário digita a mensagem -->
     <input type="text" id="Mensagem" placeholder="Mensagem">
+        <!-- Botão que dispara a função alertarMsg() -->
     <button onclick="exibir()">Exibir</button>
 <script>
     function exibir(){
+         // pega o valor que foi digitado no input
         var Mensagem = document.getElementById("Mensagem").value
+         // exibe esse valor em uma caixa de alerta
         alert(Mensagem)
 }
 </script>

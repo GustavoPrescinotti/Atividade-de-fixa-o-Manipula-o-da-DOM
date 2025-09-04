@@ -6,6 +6,7 @@
     <title>Atividade 40</title>
 </head>
 <body>
+     <!-- 40. Trocar texto de todos os parágrafos -->
     <p>Este é o primeiro parágrafo. Ele tem um texto original.</p>
     <p>Aqui temos o segundo parágrafo. O conteúdo dele também é único.</p>
     <p>E finalmente, o terceiro e último parágrafo para nosso teste.</p>
@@ -13,7 +14,9 @@
 
     <script>
         function alterarTodosOsParagrafos() {
+            // pega todos os parágrafos da página
             var listaDeParagrafos = document.querySelectorAll('p');
+            // percorre todos e altera o texto
             listaDeParagrafos.forEach(function(paragrafo) {
                 paragrafo.textContent = "Alterado!";
             });

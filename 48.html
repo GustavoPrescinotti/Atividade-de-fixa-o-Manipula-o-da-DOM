@@ -6,6 +6,7 @@
     <title>Atividade 48</title>
 </head>
 <body>
+  <!-- 48. To-do list -->
     <input  id="entrada" type="text">
     <button onclick="adicionar()">Adicionar</button>
     <ul id="Lista"></ul>
@@ -16,7 +17,7 @@
             var novaTarefa = document.getElementById("Lista")
             novaTarefa.textContent = textoTarefa
             document.getElementById("Lista").appendChild(novaTarefa)
-            document.grtElementById("entrada").value = ''
+            document.grtElementById("entrada").value = ''// limpa input
         }
     </script>
 </body>

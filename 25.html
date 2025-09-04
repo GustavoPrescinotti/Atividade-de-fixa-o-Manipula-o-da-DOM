@@ -6,9 +6,11 @@
     <title>Atividade 25</title>
 </head>
 <body>
+    <!-- 25. Campo fica amarelo ao ganhar foco -->
     <input type="text" id="campoTexto" onfocus="textoamarelo()">
     <script>
         function textoamarelo () {
+              // muda fundo do input quando recebe foco
             document.getElementsByTagName("input")[0].style.backgroundColor = "yellow";
         }
     </script>

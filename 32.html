@@ -6,32 +6,22 @@
     <title>Atividade 32</title>
 </head>
 <body>
-    <input type="text" id="itemInput" placeholder="Digite um item">
-    <button onclick="adicionarItem()">Adicionar</button>
 
-
-    <ul id="itemList">
-        <li>Feijão</li>
-        <li>Arroz</li>
-    </ul>
-
-
-<script>
-    function adicionarItem(){
-        var input = document.getElementById("itemInput");
-        var item = input.value;
-        if(item){
-            var ul = document.getElementById("itemList");
-            var li = document.createElement("li");
-            li.textContent = item;
-            ul.appendChild(li);
-            input.value = "";
-        } else {
-            alert("Por favor, digite um item.");
-        }
+  <!-- 32. Botão que adiciona item na lista -->
+  <ul id="listaItens">
+    <li>Item 1</li>
+  </ul>
+  <button onclick="adicionarItem()">Adicionar item</button>
+  <script>
+    function adicionarItem() {
+      // cria novo item
+      let novo = document.createElement("li");
+      novo.innerText = "Novo item";
+      // adiciona no final da lista
+      document.getElementById("listaItens").appendChild(novo);
     }
-
-</script>
+  </script>
+  <hr>
 
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>Atividade 29</title>
 </head>
 <body>
+     <!-- 29. Trocar imagem ao passar o mouse -->
     <img 
         id="imgTroca"
         src="img/leao.jpg"
@@ -14,10 +15,13 @@
     <hr>
     <script>
         var img = document.getElementById("imgTroca");
-        img.onmouseover = function() {    
+        img.onmouseover = function() {   
+             // troca a imagem quando passa o mouse 
             img.src = "img/trige.jpg";
         };
         img.onmouseout = function() {
+              // volta para a imagem original
+
             img.src = "img/leao.jpg";
         };
     </script>

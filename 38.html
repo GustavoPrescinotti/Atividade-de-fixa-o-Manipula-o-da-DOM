@@ -6,6 +6,7 @@
     <title>Atividade 38</title>
 </head>
 <body>
+    <!-- 38. Calculadora de soma -->
     <input id="num1"> +
     <input id="num2">
     
@@ -15,9 +16,11 @@
 
     <script>
         function somar() {
-            const resultadoDaSoma = 
+            var resultadoDaSoma = 
+              // pega valores dos inputs (como texto) e converte para número
                 parseFloat(document.getElementById('num1').value) + 
                 parseFloat(document.getElementById('num2').value);
+            //mostrar resultado
             document.getElementById('resultado').textContent = resultadoDaSoma;
         }
     </script>

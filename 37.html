@@ -6,6 +6,7 @@
     <title>Atividade 37</title>
 </head>
 <body>
+     <!-- 37. Alterar texto do h1 com input -->
         <h1 id="titulo">Igor</h1>
 
     <input type="text" id="campoInput" placeholder="Digite algo...">
@@ -13,6 +14,7 @@
 
     <script>
         function alterar() {
+             // pega valor do input e joga no h1
             var novoTexto = document.getElementById('campoInput').value;
             var titulo = document.getElementById('titulo');
             titulo.textContent = novoTexto;

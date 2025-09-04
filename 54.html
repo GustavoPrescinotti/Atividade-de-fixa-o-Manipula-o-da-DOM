@@ -4,7 +4,8 @@
     <title>Atividade 54</title>
 </head>
 <body>
-
+ <!-- 54. Calculadora de dobro -->
+  <!-- Input para digitar um número -->
     <input type="number" id="entrada">
     <button onclick="calcular()">Calcular Dobro</button>
 
@@ -12,8 +13,9 @@
 
     <script>
         function calcular() {
+             // pega o valor digitado no input e converte para número
             var resultado = parseFloat(document.getElementById('entrada').value) * 2;
-
+              // mostra no parágrafo o dobro do número digitado
             document.getElementById('saida').textContent = resultado;
         }
     </script>

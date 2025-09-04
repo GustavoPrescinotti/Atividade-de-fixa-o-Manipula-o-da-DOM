@@ -6,10 +6,13 @@
     <title>Atividade 28</title>
 </head>
 <body>
+    <!-- 28. Botão que só pode ser clicado uma vez -->
+
     <button id="buão">Clique apenas uma fez </button>
     <script>
        document.getElementById("buão").onclick = function() {
         alert("Você e um gênio");
+         // desativa o botão
          this.disabled = true;
     };
     </script>

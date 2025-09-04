@@ -6,13 +6,17 @@
     <title>Atividade 22</title>
 </head>
 <body>
+     <!-- 22. Botão que conta cliques -->
     <p id="contador">Clique: </p>
     <button onclick="cliqueemmim()"> clique no butão</button>
 <script>
         var  cliques = 0;
         function cliqueemmim(){
+            // soma +1 a cada clique
         document.getElementById("contador").innerHTML = "Clique: " + cliques;
+        // mostra no parágrafo
         cliques++;
+        
     }
 </script>
 </body>

@@ -6,13 +6,14 @@
     <title>Atividade 44</title>
 </head>
 <body>
+      <!-- 44. Relógio -->
      <button onclick="mostrarHora()">Ver a Hora</button>
 
     <h2 id="relogio">--:--:--</h2>
 
     <script>
         function mostrarHora() {
-
+            // pega hora atual
             var agora = new Date();
             var horaFormatada = agora.toLocaleTimeString('pt-BR');
             document.getElementById('relogio').textContent = horaFormatada;

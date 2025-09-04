@@ -6,7 +6,7 @@
     <title>Atividade 33</title>
 </head>
 <body>
-
+<!-- 33. Remover último item da lista -->
     <button onclick="removeroultimoitem()">Remover</button>
 
     <ul id="itemList">
@@ -22,6 +22,7 @@
 function removeroultimoitem(){
     var lista = document.getElementById("itemList");
     var ultimoitem = lista.lastElementChild
+     // remove o último item se existir
     if(ultimoitem){
         ultimoitem.remove();
     }
