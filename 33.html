@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 33</title>
+</head>
+<body>
+
+    <button onclick="removeroultimoitem()">Remover</button>
+
+    <ul id="itemList">
+        <li>Banana</li>
+        <li>Maça</li>
+        <li>Kiwi</li>
+        <li>Matheus Patinho</li>
+    </ul>
+
+
+
+<script>
+function removeroultimoitem(){
+    var lista = document.getElementById("itemList");
+    var ultimoitem = lista.lastElementChild
+    if(ultimoitem){
+        ultimoitem.remove();
+    }
+}
+</script>
+
+</body>
+</html>

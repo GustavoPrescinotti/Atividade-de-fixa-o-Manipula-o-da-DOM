@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 45</title>
+</head>
+<body>
+
+    
+    <p>
+        Curtidas: <span id="contador">0</span>
+    </p>
+     <button onclick="curtir()">Curtir (+1)</button>
+    <script>
+        var totalDeCurtidas = 0;
+        function curtir() {
+            totalDeCurtidas++;
+            document.getElementById('contador').textContent = totalDeCurtidas;
+        }
+    </script>
+    
+</body>
+</html>

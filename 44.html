@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 44</title>
+</head>
+<body>
+     <button onclick="mostrarHora()">Ver a Hora</button>
+
+    <h2 id="relogio">--:--:--</h2>
+
+    <script>
+        function mostrarHora() {
+
+            var agora = new Date();
+            var horaFormatada = agora.toLocaleTimeString('pt-BR');
+            document.getElementById('relogio').textContent = horaFormatada;
+        }
+    </script>
+</body>
+</html>

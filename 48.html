@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 48</title>
+</head>
+<body>
+    <input  id="entrada" type="text">
+    <button onclick="adicionar()">Adicionar</button>
+    <ul id="Lista"></ul>
+
+    <script>
+        function adicionar(){
+            var textoTarefa = document.getElementById("entrada").value
+            var novaTarefa = document.getElementById("Lista")
+            novaTarefa.textContent = textoTarefa
+            document.getElementById("Lista").appendChild(novaTarefa)
+            document.grtElementById("entrada").value = ''
+        }
+    </script>
+</body>
+</html>

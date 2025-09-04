@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exemplo 1</title>
+</head>
+<body>
+<!-- 7. Mostrar quantidade de caracteres de um parágrafo -->
+    <p id="meuParagrafo">Gustavo Prescinotti de Melo</p>
+    <button onclick="mostrarQuantidade()">Mostrar Quantidade de Caracteres</button>
+
+    <script>
+        function mostrarQuantidade() {
+                 // pega o texto do parágrafo
+            var paragrafo = document.getElementById('meuParagrafo');
+              // conta os caracteres
+            alert("Quantidade de caracteres: " + paragrafo.innerText.length);
+        }
+    </script>
+
+</body>
+</html>

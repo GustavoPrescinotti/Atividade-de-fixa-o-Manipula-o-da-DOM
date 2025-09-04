@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+ <!-- 1. Botão que exibe no console o texto de um parágrafo -->
+    <p id="meuParagrafo">Matheus e meu PATO</p>
+    <button onclick="mostrarTexto()">Mostrar Texto no Console</button>
+
+    <script>
+        function mostrarTexto() {
+            // pega o elemento <p> pelo ID
+            var paragrafo = document.getElementById('meuParagrafo');
+             // mostra o texto no console
+            console.log(paragrafo.innerText);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Troca Imagem</title>
+</head>
+<body>
+
+    <img id="minhaImagem" src="https://static.vecteezy.com/ti/fotos-gratis/t2/36324708-ai-gerado-cenario-do-uma-tigre-caminhando-dentro-a-floresta-foto.jpg">
+
+    <br>
+
+    <button onclick="trocar()">Trocar Imagem</button>
+
+    <script>
+        const imagemA = 'https://static.vecteezy.com/ti/fotos-gratis/t2/36324708-ai-gerado-cenario-do-uma-tigre-caminhando-dentro-a-floresta-foto.jpg';
+        const imagemB = 'https://labetno.ufpa.br/images/galeria_em_artigos/image03_grd.png';
+
+        let mostrandoImagemA = true;
+
+        function trocar() {
+            const imgElement = document.getElementById('minhaImagem');
+
+            imgElement.src = mostrandoImagemA ? imagemB : imagemA;
+
+            mostrandoImagemA = !mostrandoImagemA;
+        }
+    </script>
+
+</body>
+</html>

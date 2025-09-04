@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19</title>
+</head>
+<body>
+<!-- 19. Div com fundo aleatório -->
+  <div id="divCor" style="width:150px; height:150px; background:lightgray;"></div>
+  <button onclick="corAleatoria()">Cor aleatória</button>
+  <script>
+    function corAleatoria() {
+      // gera uma cor aleatória em formato hexadecimal
+      let cor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+      // aplica na div
+      document.getElementById("divCor").style.backgroundColor = cor;
+    }
+  </script>
+  <hr>
+
+
+</body>
+</html>

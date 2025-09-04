@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29</title>
+</head>
+<body>
+    <img 
+        id="imgTroca"
+        src="img/leao.jpg"
+        alt="Imagem de um leão">
+    
+    <hr>
+    <script>
+        var img = document.getElementById("imgTroca");
+        img.onmouseover = function() {    
+            img.src = "img/trige.jpg";
+        };
+        img.onmouseout = function() {
+            img.src = "img/leao.jpg";
+        };
+    </script>
+</body>
+</html>

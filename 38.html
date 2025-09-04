@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 38</title>
+</head>
+<body>
+    <input id="num1"> +
+    <input id="num2">
+    
+    <button onclick="somar()">=</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function somar() {
+            const resultadoDaSoma = 
+                parseFloat(document.getElementById('num1').value) + 
+                parseFloat(document.getElementById('num2').value);
+            document.getElementById('resultado').textContent = resultadoDaSoma;
+        }
+    </script>
+
+</body>
+</html>

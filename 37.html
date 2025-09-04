@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 37</title>
+</head>
+<body>
+        <h1 id="titulo">Igor</h1>
+
+    <input type="text" id="campoInput" placeholder="Digite algo...">
+    <button onclick="alterar()">Alterar</button>
+
+    <script>
+        function alterar() {
+            var novoTexto = document.getElementById('campoInput').value;
+            var titulo = document.getElementById('titulo');
+            titulo.textContent = novoTexto;
+        }
+    </script>
+</body>
+</html>

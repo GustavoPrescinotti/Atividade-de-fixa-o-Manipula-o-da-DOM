@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 55</title>
+</head>
+<style>
+  #caixa {
+            width: 200px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border: 3px solid black;
+            margin: 20px;
+            transition: border-color 0.4s ease;
+        }
+
+</style>
+<body>
+  <div id="caixa"></div>
+
+    <button onclick="mudarCorDaBorda()">Mudar Borda para Azul</button>
+
+    <script>
+        function mudarCorDaBorda() {
+            const caixa = document.getElementById('caixa');
+
+            caixa.style.borderColor = 'blue';
+        }
+    </script>
+
+</body>
+</html>

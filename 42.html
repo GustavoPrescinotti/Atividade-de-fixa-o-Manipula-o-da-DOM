@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 42</title>
+</head>
+<body>
+     <div class="container">
+        <button onclick="mudarCorDeFundo()">Mudar Cor</button>
+    </div>
+
+    <script>
+        function mudarCorDeFundo() {
+           
+            var r = Math.floor(Math.random() * 256); 
+            var g = Math.floor(Math.random() * 256); 
+            var b = Math.floor(Math.random() * 256); 
+
+            var corAleatoria = `rgb(${r}, ${g}, ${b})`;
+
+          
+            document.body.style.backgroundColor = corAleatoria;
+
+           
+            document.getElementById('valorCor').textContent = corAleatoria;
+        }
+
+
+        mudarCorDeFundo();
+    </script>
+</body>
+</html>

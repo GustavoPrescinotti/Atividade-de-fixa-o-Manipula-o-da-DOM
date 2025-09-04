@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade 52</title>
+</head>
+<body>
+
+    <img id="imagemCarrossel" src="https://picsum.photos/id/10/400/300" width="400">
+
+    <br>
+
+    <button onclick="proxima()">Próximo</button>
+
+    <script>
+        const imagens = [
+            'https://picsum.photos/id/10/400/300',
+            'https://picsum.photos/id/20/400/300',
+            
+        ];
+
+        let indice = 0;
+
+        function proxima() {
+            indice = (indice + 1) % imagens.length;
+
+            document.getElementById('imagemCarrossel').src = imagens[indice];
+        }
+    </script>
+
+</body>
+</html>

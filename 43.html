@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 43</title>
+</head>
+<body>
+    <style>
+        #paragrafoMagico {
+            font-size: 20px;
+            color: blue;
+        }
+        .escondido {
+            display: none;
+        }
+    </style>
+    <button onclick="alternarVisibilidade()">Mostrar</button>
+
+    <p id="paragrafoMagico">
+        Olá! Eu sou um parágrafo que pode aparecer e desaparecer.
+    </p>
+
+    <script>
+        function alternarVisibilidade() {
+            const paragrafo = document.getElementById('paragrafoMagico');
+            paragrafo.classList.toggle('escondido');
+        }
+    </script>
+</body>
+</html>

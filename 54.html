@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade 54</title>
+</head>
+<body>
+
+    <input type="number" id="entrada">
+    <button onclick="calcular()">Calcular Dobro</button>
+
+    <p id="saida"></p>
+
+    <script>
+        function calcular() {
+            var resultado = parseFloat(document.getElementById('entrada').value) * 2;
+
+            document.getElementById('saida').textContent = resultado;
+        }
+    </script>
+
+</body>
+</html>

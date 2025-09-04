@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 41</title>
+</head>
+<body>
+    <style>
+        #luzSemaforo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: gray;
+            margin-bottom: 20px;
+        }
+    </style>
+    <h1>Semáforo</h1>
+
+    <div id="luzSemaforo"></div>
+
+    <div>
+        <button onclick="mudarCor('red')">Vermelho</button>
+        <button onclick="mudarCor('yellow')">Amarelo</button>
+        <button onclick="mudarCor('green')">Verde</button>
+    </div>
+
+    <script>
+        function mudarCor(novaCor) {
+    
+            var luz = document.getElementById('luzSemaforo');
+
+            luz.style.backgroundColor = novaCor;
+        }
+    </script>
+
+</body>
+</html>

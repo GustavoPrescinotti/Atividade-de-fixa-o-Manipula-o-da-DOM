@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <!-- 2. Input + botão que mostra o valor digitado em um <p> -->
+    <input type="text" id="meuInput" placeholder="Digite">
+    <button onclick="mostrarValor()">Mostra</button>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarValor(){
+             // pega o valor digitado no input
+            var valor = document.getElementById('meuInput').value;
+               // coloca dentro do parágrafo
+            document.getElementById('resultado').innerHTML= valor
+        }
+    </script>
+</body>
+</html>

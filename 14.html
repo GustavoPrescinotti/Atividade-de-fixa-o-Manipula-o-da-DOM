@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+</head>
+<body>
+     <!-- 14. Div quadrada e botão para aumentar largura -->
+    <div id="quadrado" style="width: 100px; height: 100px; background-color:red"></div>
+
+    <br>
+
+    <button onclick="alterarLargura()">Alterar Largura para 300px</button>
+
+    <script>
+        function alterarLargura() {
+              // altera a largura da div
+            var quadrado = document.getElementById('quadrado');
+
+            quadrado.style.width = '300px';
+        }
+    </script>
+</body>
+</html>

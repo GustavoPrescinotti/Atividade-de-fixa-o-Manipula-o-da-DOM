@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 22</title>
+</head>
+<body>
+    <p id="contador">Clique: </p>
+    <button onclick="cliqueemmim()"> clique no butão</button>
+<script>
+        var  cliques = 0;
+        function cliqueemmim(){
+        document.getElementById("contador").innerHTML = "Clique: " + cliques;
+        cliques++;
+    }
+</script>
+</body>
+</html>

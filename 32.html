@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 32</title>
+</head>
+<body>
+    <input type="text" id="itemInput" placeholder="Digite um item">
+    <button onclick="adicionarItem()">Adicionar</button>
+
+
+    <ul id="itemList">
+        <li>Feijão</li>
+        <li>Arroz</li>
+    </ul>
+
+
+<script>
+    function adicionarItem(){
+        var input = document.getElementById("itemInput");
+        var item = input.value;
+        if(item){
+            var ul = document.getElementById("itemList");
+            var li = document.createElement("li");
+            li.textContent = item;
+            ul.appendChild(li);
+            input.value = "";
+        } else {
+            alert("Por favor, digite um item.");
+        }
+    }
+
+</script>
+
+</body>
+</html>
